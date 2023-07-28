@@ -21,8 +21,10 @@ app.use(express.json());
 // fetch from api 
 
 app.get('/pictures/:input', (req, res) => {
+    console.log('Recieved');
     let input = req.params.input;
     let page = req.query.page
+    console.log(input, page)
     let headers = {
         "Authorization": `Client-ID ${process.env.KEY}`,
         "Accept-Version": 'v1',
