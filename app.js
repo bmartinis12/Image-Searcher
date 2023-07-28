@@ -20,7 +20,7 @@ app.use(express.json());
 
 // fetch from api 
 
-app.get('/pictures/:input', (req, res) => {
+app.get('https://image-searcher.onrender.com/pictures/:input', (req, res) => {
     let input = req.params.input;
     let page = req.query.page
     let headers = {
@@ -37,12 +37,12 @@ app.get('/pictures/:input', (req, res) => {
 
 // Searches routes 
 
-app.get('/searches', async (req, res) => {
+app.get('https://image-searcher.onrender.com/searches', async (req, res) => {
     let searchList = await Searches.find();
     res.send(searchList);
 });
 
-app.post('/searches', async (req, res) => {
+app.post('https://image-searcher.onrender.com/searches', async (req, res) => {
     let input = req.body.search.toLowerCase();
     let findSearch = await Searches.find({ searchQuery: input });
     let count = await Searches.countDocuments({});
