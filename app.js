@@ -4,6 +4,7 @@ let express = require('express');
 let app = express();
 let mongoose = require('mongoose');
 require('dotenv').config();
+const fetch = require("node-fetch");
 let Searches = require('./models/searches.model').Searches;
 
 // connect to database 
