@@ -11,7 +11,7 @@ let previous = document.querySelector('.previous');
 // Fetch photo data 
 
 async function getImages(input, page) {
-    return await fetch('/pictures/' + input + `?page=${page}`,)
+    return await fetch(`/pictures/${input}?page=${page}`,)
         .then((response) => response.json())
         .then((data) => data);
 }
