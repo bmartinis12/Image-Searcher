@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="See images relating to your search!">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/e874c4d243.js" crossorigin="anonymous"></script>
+  <title>Image Searcher</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid justify-content-center">
+        <a class="navbar-brand text-uppercase">Image Searcher</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="input-group rounded w-75 m-auto">
+      <input type="text" class="form-control rounded search-input" placeholder="Search" aria-label="Search"
+        aria-describedby="search-addon" />
+      <span class="input-group-text border-0 bg-info" id="search-addon">
+        <i class="fas fa-search"></i>
+      </span>
+    </div>
+    <div class="dropdown-center text-center">
+      <button class="btn btn-secondary dropdown-toggle w-50" type="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Recent Searches
+      </button>
+      <ul class="dropdown-menu dropdown-menu-dark w-50"></ul>
+    </div>
+    <div class="rounded w-75 border response">
+      <nav aria-label="navigation">
+        <ul class="pagination">
+          <li>
+            <a class="previous" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-num">#/#</li>
+          <li>
+            <a class="next" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="pictures"></div>
+    </div>
+  </main>
+  <footer class="text-center text-lg-start bg-light text-muted fixed-bottom">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="me-5 d-lg-block">
+        <span class="created">Image Searcher ©</span>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/benjamin-martinis-863350272/" target="_blank" me-4 text-reset">
+          Benjamin Martinis <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </section>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
